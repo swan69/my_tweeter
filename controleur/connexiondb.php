@@ -1,9 +1,9 @@
 <?php
     class connexionDB {
-        private $host    = '';  
-        private $name    = '';     
-        private $user    = '';        
-        private $pass    = '';       
+        private $host    = 'localhost';  
+        private $name    = 'twa_common_db';     
+        private $user    = 'twa_admin';        
+        private $pass    = '2f185889-9694-4b3c-8224-47e2993c432b';       
         
         private $connexion;
                           

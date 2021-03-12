@@ -2,34 +2,34 @@
 <html lang="fr">
 
 <?php
-include_once("../db/connexiondb.php");
+require('../controleur/connexion.php');
 ?>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tweet Académie | Index</title>
-  <link type="text/css" rel="stylesheet" href="../css/index.css">
+  <link type="text/css" rel="stylesheet" href="../view/css/index.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 
 <body>
-  
+
   <nav>
-    <form id="login">
+    <form id="login-form" method="post">
       <div class="row">
         <br>
       </div>
       <div class="row">
         <div class="col-2 offset-6">
-          <input type="email" class="form-control" placeholder="Votre email">
+          <input type="email" name="email" class="form-control" placeholder="Votre email" required>
         </div>
         <div class="col-2">
-          <input type="password" class="form-control" placeholder="Votre mot de passe">
+          <input type="password" name="mdp" class="form-control" placeholder="Votre mot de passe" required>
         </div>
         <div class="col-2">
-          <button type="submit" class="btn btn-primary btn-md">Se connecter</button>
+          <button type="submit" name="connexion" class="btn btn-primary btn-md">Se connecter</button>
         </div>
       </div>
     </form>
@@ -45,8 +45,9 @@ include_once("../db/connexiondb.php");
   <a href="inscription.php"><button id="inscription" class="btn-grad" type="button">
       Insription
     </button></a>
-</div>
+    
 
+</div>
 <div id="text">
 <h1>Nous n'attendons <br>plus que vous !</h1>
 <h2>Rejoignez My Twitter dès maintenant.</h2>

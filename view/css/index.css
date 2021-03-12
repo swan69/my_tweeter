@@ -1,10 +1,23 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../assets/draw.jpg) no-repeat center fixed;
+    background: url(../../assets/bg.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
     background-size: cover;
-    color: #fff;
+}
+
+#slogo {
+    margin-left: 5%;
+    margin-top: 7%;
+}
+
+
+.btn-grad2 {
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%)
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%)
 }
 
 .btn-grad {
@@ -23,6 +36,19 @@ body {
     background-position: right center;
     color: #fff;
     text-decoration: none;
+}
+
+#logreg {
+    display: flex;
+    margin-left: 65%;
+}
+
+#text {
+    text-align: center;
+    margin-top: -20%;
+    margin-left: 55%;
+    color: #fff;
+    
 }
 
 #logo {
